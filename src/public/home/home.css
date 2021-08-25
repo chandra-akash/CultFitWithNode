@@ -225,8 +225,8 @@ nav div3 div-3 img{
     float: right;
     right: 7%;
     margin-top: -7%;
+    cursor: pointer;
 }
-
 
 /* 2nd: cult, 3rd: careFit, 4th: mindFit div styles */
 .middleDivs{
@@ -647,6 +647,10 @@ background-image: linear-gradient(to right,#6f69aa,#378ac5);
     border-radius: 31px;
     font-size: 18px;
     background-image: linear-gradient(99deg, rgb(202, 202, 202), rgb(199, 199, 199));
+    cursor: pointer;
+        display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .Tnc{
     color: rgb(102, 102, 102);
@@ -909,4 +913,8 @@ background-image: linear-gradient(to right,#6f69aa,#378ac5);
         width: 80px;
         height: 80px;
     }
+}
+a{
+    text-decoration: none;
+    color: white;
 }
