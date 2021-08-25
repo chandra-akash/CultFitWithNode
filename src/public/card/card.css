@@ -2,6 +2,10 @@
         body{
             padding:50px
         }
+        a{
+            color:white;
+            text-decoration:none
+        }
         #box{
             width:480px;
             height:180px;

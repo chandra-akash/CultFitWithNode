@@ -66,6 +66,7 @@
         height: 65%;
         margin-left: 15px;
         margin-right: 0px;
+        margin-top:20%
     }
 
     #cart {
@@ -73,6 +74,7 @@
         width: auto;
         height: 45%;
         margin-left: 20px;
+        margin-top:40%
     }
 
     #arrow {

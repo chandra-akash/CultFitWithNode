@@ -68,9 +68,11 @@
         height: 65%;
         margin-left: 15px;
         margin-right: 0px;
+        margin-top: 20%;
     }
 
     #cart {
+        margin-top: 40%;
         align-self: center;
         width: auto;
         height: 45%;
