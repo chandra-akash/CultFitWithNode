@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Get Fitness Workouts, Gyms, Health Care, &amp; Healthy Food in India by Cult.fit</title>
-        <link rel="stylesheet" href="profile.css">
+        <link rel="stylesheet" href="/static/profile/profile.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     </head>
@@ -127,13 +127,15 @@
                             <hr>
                             <span>GENDER</span>
                             <div id="malefema">
-                                <image class="gender male" src="https://static.cure.fit/assets/images/male-active.svg">
+                                <image onclick="male()" id="maleImg" class="gender male"
+                                    src="https://static.cure.fit/assets/images/male-inactive.svg">
                                 </image>
                                 <div id="vertline"></div>
-                                <image class="gender" src="https://static.cure.fit/assets/images/female-inactive.svg">
+                                <image onclick="female()" id="femaleImg" class="gender"
+                                    src="https://static.cure.fit/assets/images/female-inactive.svg">
                                 </image>
                             </div>
-                            <p>Male</p>
+                            <p id='gender'></p>
                             <hr id="hr2">
                             <span>EMAIL</span>
                             <div class="input-group">
@@ -180,8 +182,8 @@
 
 
     </body>
-
-    <script>
+    <script src="/static/profile/profile.js"></script>
+    <!-- <script>
 
         window.onscroll = function ()
         {
@@ -195,12 +197,12 @@
         var navbar = document.getElementById( "navBlock" );
         var sticky = navbar.offsetTop;
 
-        function goToHome()
-        {
+        // function goToHome()
+        // {
 
-            window.location.href = "../home.html"
+        //     window.location.href = "../home.html"
 
-        }
-    </script>
+        // }
+    </script> -->
 
 </html>
