@@ -44,6 +44,115 @@ window.onclick = function ( event )
     }
 }
 
+// pop up location
+var count = 0;
+var trigger = document.getElementById("location");
+var modelRapper = document.getElementById("model_wrapper");
+
+trigger.addEventListener("click", function () {
+    count++;
+    if (count % 2 == 1) {
+        modelRapper.classList.add("active");
+    } else if (count % 2 == 0) {
+     modelRapper.classList.remove("active");   
+    }
+})
+
+modelRapper.addEventListener("click", function (e) {
+    if (e.target !== this) return
+    modelRapper.classList.remove("active");
+    count++;
+})
+
+
+
+function set1() {
+    let set = document.getElementById("set1");
+    trigger.innerText = set.innerText;
+}
+function set2() {
+    let set = document.getElementById("set2");
+    trigger.innerText = set.innerText;
+}
+function set3() {
+    let set = document.getElementById("set3");
+    trigger.innerText = set.innerText;
+}
+function set4() {
+    let set = document.getElementById("set4");
+    trigger.innerText = set.innerText;
+}
+function set5() {
+    let set = document.getElementById("set5");
+    trigger.innerText = set.innerText;
+}
+function set6() {
+    let set = document.getElementById("set6");
+    trigger.innerText = set.innerText;
+}
+function set7() {
+    let set = document.getElementById("set7");
+    trigger.innerText = set.innerText;
+}
+
+function set8() {
+    let set = document.getElementById("set8");
+    trigger.innerText = set.innerText;
+}
+function set9() {
+    let set = document.getElementById("set9");
+    trigger.innerText = set.innerText;
+}
+
+function set10() {
+    let set = document.getElementById("set10");
+    trigger.innerText = set.innerText;
+}
+function set11() {
+    let set = document.getElementById("set11");
+    trigger.innerText = set.innerText;
+}
+function set12() {
+    let set = document.getElementById("set12");
+    trigger.innerText = set.innerText;
+}
+function set13() {
+    let set = document.getElementById("set13");
+    trigger.innerText = set.innerText;
+}
+function set14() {
+    let set = document.getElementById("set14");
+    trigger.innerText = set.innerText;
+}
+function set15() {
+    let set = document.getElementById("set15");
+    trigger.innerText = set.innerText;
+}
+function set16() {
+    let set = document.getElementById("set16");
+    trigger.innerText = set.innerText;
+}
+function set17() {
+    let set = document.getElementById("set17");
+    trigger.innerText = set.innerText;
+}
+
+function set18() {
+    let set = document.getElementById("set18");
+    trigger.innerText = set.innerText;
+}
+function set19() {
+    let set = document.getElementById("set19");
+    trigger.innerText = set.innerText;
+}
+
+function set20() {
+    let set = document.getElementById("set20");
+    trigger.innerText = set.innerText;
+}
+
+
+
 
 // valid phone number length checker
 function validNumber ()
