@@ -75,7 +75,7 @@ function showStore(d){
                     localStorage.removeItem("selectedItem");
                     localStorage.setItem("selectedItem",JSON.stringify(el))
                 }
-                window.location.href = "../selectedItem/selectedItem.html";
+                window.location.href = "http://localhost:3333/selectedItem";
 
             });
             

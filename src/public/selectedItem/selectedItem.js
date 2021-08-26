@@ -90,7 +90,7 @@ function cardPage() {
   if (buyNow == "buy Now") {
     alert("Please Add Some Item")
   } else {
-    window.location.href = "../card/card.html";
+    window.location.href = "http://localhost:3333/card";
   }
 
 }
