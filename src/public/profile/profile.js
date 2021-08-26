@@ -12,3 +12,9 @@ function female ()
     document.getElementById( "femaleImg" ).src = 'https://static.cure.fit/assets/images/female-active.svg'
 
 }
+
+function nameUser ()
+{
+    let name = document.getElementById( "user_name" ).value
+    document.getElementById( "display_user_name" ).innerHTML = name;
+}
