@@ -17,6 +17,7 @@ body{
     opacity: 0;
     pointer-events: none;
     transition: all .3s ease-in-out;
+        z-index: 10;
 }
 .model_container{
     background-color: white;
@@ -448,6 +449,7 @@ background-image: linear-gradient(to right,#6f69aa,#378ac5);
     left: 0px;
     width: 100%;
     cursor: pointer;
+    z-index: -1;
 }
 .backgroundLink{
     margin: 0px;

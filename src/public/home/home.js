@@ -18,7 +18,7 @@ function muteUnmute ()
 }
 
 
-//Pop Up Div
+//Pop Up Div----------Login PopUp----------/
 // Get the modal
 var popUpDiv = document.getElementById( "popUpDiv" );
 // Get the button that opens the popUpDiv
