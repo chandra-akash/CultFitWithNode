@@ -118,18 +118,19 @@
                 </div>
 
                 <!-- login input part -->
-                <div class="MiddlePart">
+                <div class="MiddlePart" method="post" action="/userDetails"  >
                     <div class="InputContainer">
                         <div class="ConutryCodeContainer">
                             <div class="CountryCode">+91 <img src="https://static.cure.fit/assets/images/arrow-clp.svg"
                                     class="arrow-image" alt=""></div>
-                        </div><input type="tel" placeholder="Enter  your phone number" name="userNumber"
+                        </div>
+                        <input type="tel" placeholder="Enter  your phone number" name="userNumber"
                             class="MobileInput" id="mobNum" onkeypress="validNumber()" required>
                     </div>
 
                     <!-- login continue button -->
                     <!-- <a href="/profile"> -->
-                    <div class="ActionContainer"><a href='' class=" ContinueButton" id="continueBtn">Continue</a>
+                    <div class="ActionContainer" type="submit"><a href='' class=" ContinueButton" id="continueBtn">Continue</a>
                     </div>
                     <!-- </a> -->
 

@@ -2,6 +2,20 @@ const path = require( "path" );
 const express = require( "express" );
 
 const connect = require( "./configs/db" );
+const app = express();
+
+app.use(express.urlencoded({
+  extended: true
+}));
+
+
+
+// app.get("/",(req,res)=>{
+//   res.send("halll")
+// })
+
+
+
 
 const homeController = require( "./controllers/home.controller" );
 const storeController = require( "./controllers/store.controller" );
@@ -11,9 +25,9 @@ const cardController = require( "./controllers/card.controller" );
 const paymentController = require( "./controllers/payment.controller" );
 const thankyouController = require( "./controllers/thankyou.controller" );
 const profileController = require( "./controllers/profile.controller" );
-const userController = require( "./controllers/user.controller" );
 
-const app = express();
+
+
 
 app.use( express.json() );
 app.use( express.urlencoded( { extended: false } ) );
@@ -30,7 +44,7 @@ app.use( "/card", cardController );
 app.use( "/payment", paymentController );
 app.use( "/profile", profileController );
 app.use( "/ThankYouPopUp", thankyouController );
-app.use( "/userDetails", userController );
+
 
 app.listen( 3333, async () =>
 {
