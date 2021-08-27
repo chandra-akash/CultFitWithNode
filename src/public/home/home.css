@@ -598,11 +598,18 @@ background-image: linear-gradient(to right,#6f69aa,#378ac5);
 .MiddlePart{
     margin-top: 60px;
 }
-.InputContainer{
+/* .InputContainer{
     border-bottom: 2px solid rgb(151, 151, 151);
     width: fit-content;
     margin: 0px auto;
+} */
+.InputContainer{
+    width: fit-content;
+    margin: 0px auto;
+    margin-left:60px;
+    font-size: 18px;
 }
+
 .ConutryCodeContainer{
     display: inline-block;
     position: relative;
@@ -640,7 +647,7 @@ background-image: linear-gradient(to right,#6f69aa,#378ac5);
     flex-direction: column;
     margin-top: 40px;
 }
-.ContinueButton{
+/* .ContinueButton{
     color: rgb(255, 255, 255);
     box-shadow: none;
     border: 0px;
@@ -653,6 +660,35 @@ background-image: linear-gradient(to right,#6f69aa,#378ac5);
         display: flex;
     align-items: center;
     justify-content: center;
+} */
+.MobileInput{
+    width: 202px;
+    border-bottom: 2px solid rgb(151, 151, 151);
+    border: none;
+    text-align: left;
+    background-color: transparent;
+    outline: none;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-family: BrandonTextWeb-Medium, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    padding-left: 10px;
+    letter-spacing: 3px;
+}
+.ContinueButton{
+    color: rgb(255, 255, 255);
+    box-shadow: none;
+    margin-top: 20px;
+    margin-left: 15px;
+    border: 0px;
+    width: 69%;
+    height: 50px;
+    border-radius: 31px;
+    font-size: 18px;
+    background-image: linear-gradient(99deg, rgb(202, 202, 202), rgb(199, 199, 199));
+    cursor: pointer;
+}
+#isd{
+    border: none;
 }
 .Tnc{
     color: rgb(102, 102, 102);

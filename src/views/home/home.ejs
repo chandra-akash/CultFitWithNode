@@ -118,6 +118,7 @@
                 </div>
 
                 <!-- login input part -->
+<<<<<<< HEAD
                 <div class="MiddlePart" method="post" action="/userDetails"  >
                     <div class="InputContainer">
                         <div class="ConutryCodeContainer">
@@ -133,7 +134,23 @@
                     <div class="ActionContainer" type="submit"><a href='' class=" ContinueButton" id="continueBtn">Continue</a>
                     </div>
                     <!-- </a> -->
+=======
+                <div class="MiddlePart">
+>>>>>>> 0fb262e293c1ba4c857c180c0c3495b6a19520dd
 
+                    <form class="InputContainer" action="/userDetails" method="post">
+                        <select name="isd" id="isd">
+                            <option value="india">+91</option>
+                            <option value="canada">+1</option>
+                            <option value="uk">+44</option>
+                            <option value="germany">+49</option>
+                            <option value="Israel">+972</option>
+                        </select>
+                        <input type="number" placeholder="Enter  your phone number" class="MobileInput" id="mobNum"
+                            name="userNumber" onkeypress="validNumber()">
+                        <button class=" ContinueButton" id="continueBtnCls" type="submit" onclick="matchNumber()">Continue</button>
+                    </form>
+                    <!-- <a href='' id="continueBtn">Continue</a> -->
                     <!-- turm & condition line -->
                     <div class="Tnc">
                         <div class="TncText">By Continuing you agree to the <a
