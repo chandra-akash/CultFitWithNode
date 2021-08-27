@@ -15,6 +15,5 @@ function female ()
 
 function nameUser ()
 {
-    let name = document.getElementById( "user_name" ).value
-    document.getElementById( "display_user_name" ).innerHTML = name;
+    document.getElementById( "display_user_name" ).innerHTML = document.getElementById( "user_name" ).value;
 }

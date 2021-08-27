@@ -114,56 +114,50 @@
                 <image id="img2" src="https://static.cure.fit/assets/images/user-default.png"></image>
                 <p>PROFILE</p>
                 <div class="container">
-                    <div class="row">
-                        <div class="col-6">
-                            <span>NAME</span>
-                            <div class="input-group">
-                                <input type="text" class="form-control border-0" aria-label="Sizing example input"
-                                    aria-describedby="inputGroup-sizing-default" name="userName" id="user_name"
-                                    onkeypress="nameUser()" required>
-                            </div>
-                            <hr>
-                            <span>GENDER</span>
-                            <div id="malefema">
-                                <image onclick="male()" id="maleImg" class="gender male"
-                                    src="https://static.cure.fit/assets/images/male-inactive.svg">
-                                </image>
-                                <div id="vertline"></div>
-                                <image onclick="female()" id="femaleImg" class="gender"
-                                    src="https://static.cure.fit/assets/images/female-inactive.svg">
-                                </image>
-                            </div>
-                            <p id='gender'></p>
-                            <hr id="hr2">
-                            <span>EMAIL</span>
-                            <div class="input-group">
-                                <input type="email" class="form-control border-0" aria-label="Sizing example input"
-                                    aria-describedby="inputGroup-sizing-default" required>
-                            </div>
-                            <hr>
 
+                    <form class="row g-3" action="/userDetails" method="post">
+                        <div class="col-md-6">
+                            <label for="userName" class="form-label">Name</label>
+                            <input type="text" class="form-control border-bottom" id="user_name" name="userName"
+                                onkeypress="nameUser()" required>
                         </div>
-                        <div class="col-6">
-                            <span>PHONE NUMBER</span>
-                            <div class="input-group">
-                                <input type="number" class="form-control border-0" aria-label="Sizing example input"
-                                    aria-describedby="inputGroup-sizing-default" required>
-                            </div>
-                            <hr>
-                            <span>DATE OF BIRTH</span>
-                            <div class="input-group">
-                                <input type="date" class="form-control border-0" aria-label="Sizing example input"
-                                    aria-describedby="inputGroup-sizing-default">
-                            </div>
-                            <hr>
-                            <span>WORK EMAIL</span>
-                            <div class="input-group">
-                                <input type="email" class="form-control border-0" aria-label="Sizing example input"
-                                    aria-describedby="inputGroup-sizing-default">
-                            </div>
-                            <hr>
+                        <div class="col-md-6">
+                            <label for="userPhoneNumber" class="form-label">PHONE NUMBER</label>
+                            <input type="tel" class="form-control" id="user_number" name="userNumber">
                         </div>
-                    </div>
+                        <div class="col-md-6">
+                            <label for="userGender" class="form-label">Gender</label><br>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="male"
+                                    value="male" name="userGender">
+                                <label class="form-check-label" for="inlineRadio1">MALE</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="female"
+                                    value="female" name="userGender">
+                                <label class="form-check-label" for="inlineRadio2">FEMALE</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="userDOB" class="form-label">Date Of Birth</label>
+                            <input type="date" class="form-control text-muted" id='user_dob' name="userDOB">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="userEmail" class="form-label">EMAIL</label>
+                            <input type="email" class="form-control" id='user_email' name="userEmail"
+                                placeholder="All primary Email">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="userWorkEmail" class="form-label">WORK EMAIL</label>
+                            <input type="email" class="form-control" id='user_wrk_email' name="userWorkEmail"
+                                placeholder="Add Work Email">
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-success">Submit</button>
+                            <button type="submit" class="btn btn-warning">Edit</button>
+                        </div>
+                    </form>
+
                 </div>
 
                 <div id="google">
@@ -175,8 +169,18 @@
                     <span class="text">Link Facebook</span>
                 </div>
             </div>
+        </div>
 
-
+        <!-- <div class="container">
+            <div class="row">
+                <form action="/userDetails" method="post">
+                    <input type="text" name="userName" placeholder="First Name" required />
+                    <input type="number" name="userNumber" placeholder="userNumber" required />
+                    <input type="email" name="userEmail" placeholder="Email" required />
+                    <button type="submit">Add Users</button>
+                </form>
+            </div>
+        </div> -->
 
 
     </body>

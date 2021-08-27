@@ -2,10 +2,10 @@ const mongoose = require( 'mongoose' );
 
 const userSchema = new mongoose.Schema( {
     userName: { type: String },
-    userNumber: { type: Number, required: true },
+    userNumber: { type: Number },
     userGender: { type: String },
     userEmail: { type: String },
-    userDOB: { type: Number },
+    userDOB: { type: Date },
     userWorkEmail: { type: String },
 }, {
     versionKey: false

@@ -184,16 +184,15 @@ function validNumber ()
     var num = document.getElementById( "mobNum" ).value;
     if ( num.length == 9 )
     {
-        document.getElementById( "continueBtn" ).href = '/profile';
-        document.getElementById( "continueBtn" ).style.backgroundImage = " linear-gradient(101deg, rgb( 247, 69, 48 ), rgb( 255, 46, 115 ))";
-        document.getElementById( "continueBtn" ).style.boxShadow = " rgb(247 123 155 / 71%) 0px 3px 16px 0px";
+        // document.getElementById( "continueBtn" ).href = '/profile';
+        document.getElementById( "continueBtnCls" ).style.backgroundImage = " linear-gradient(101deg, rgb( 247, 69, 48 ), rgb( 255, 46, 115 ))";
+        document.getElementById( "continueBtnCls" ).style.boxShadow = " rgb(247 123 155 / 71%) 0px 3px 16px 0px";
     } else
     {
-        document.getElementById( "continueBtn" ).style.backgroundImage = " linear-gradient(99deg, rgb(202, 202, 202), rgb(199, 199, 199))";
-        document.getElementById( "continueBtn" ).style.boxShadow = " none";
+        document.getElementById( "continueBtnCls" ).style.backgroundImage = " linear-gradient(99deg, rgb(202, 202, 202), rgb(199, 199, 199))";
+        document.getElementById( "continueBtnCls" ).style.boxShadow = " none";
     }
 }
-
 validNumber();
 
 
