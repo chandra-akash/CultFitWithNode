@@ -16,6 +16,6 @@ function hide ()
 
 function goTostore(){
 
-    window.location.href = "../store/store.html";
+    window.location.href = "http://localhost:3333/store";
 
 }

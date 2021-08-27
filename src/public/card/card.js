@@ -172,7 +172,7 @@ function goToPayMoney(){
     if (data == "") {
         alert("Nothing Select for purchase..")
     } else {
-        window.location.href = "../payment/payment.html";    
+        window.location.href = "http://localhost:3333/payment";    
     }
 
 
