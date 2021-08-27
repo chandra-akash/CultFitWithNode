@@ -39,18 +39,19 @@
 
     <div id="cointainer">
         <div>
-            <img id="images1" src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/MYrB2xZNgDrjBcTs7KkvRZHx" alt="">
+            <img id="images1" src="<%=item.image%>" alt="">
         </div>
         <div>
-            <img id="images2" src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/4waGHSTxsLxNHhvM6Y3AjFiJ" alt="">
+            <img id="images2" src="<%=item.image%>" alt="">
         </div>
         <div id="details">
-            <h5>CULTSPORT</h5>
-            <h2 id="title">Conversational Polo Tshirt</h2>
+            <h5 id="name"><%=item.name%></h5>
+            <h2 id="title"><%=item.title%></h2>
+            <p id="id" style="display: none;"><%=item._id%></p>
             <div style="margin-top: 10px;">
-                <span id="price" style="color: rgb(241,49,113);">₹ 1049 </span>
-                <span id="cprice">₹ 1499</span>
-                <button id="discount">30% off</button>
+                <span id="price" style="color: rgb(241,49,113);">₹ <%=item.price%> </span>
+                <span id="cprice">₹ <%=item.cprice%></span>
+                <button id="discount"><%=item.discount%></button>
             </div>
             <p>Designed to move with you, this Conversational Polo t-shirt from Cultsport ensures a great experience. Made by keeping
             the needs of the everyday athlete in mind, this one combines the sweat-wicking Flydry technology, supersoft , breathable
@@ -86,10 +87,10 @@
             </div>
         </div>
         <div>
-            <img id="images3" src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/9FATG99yEZFs91FdWSHx5Wd2" alt="">
+            <img id="images3" src="<%=item.image%>" alt="">
         </div>
         <div>
-            <img id="images4" src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/6AYMMr6rNzyrewe2yAxRsE6m" alt="">
+            <img id="images4" src="<%=item.image%>" alt="">
         </div>
         <div>
             <div style="margin-bottom: 50px; margin-top: 30px;">

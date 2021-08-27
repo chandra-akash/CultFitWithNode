@@ -8,7 +8,7 @@ function place(){
    
     if (name != "" && number.length == 16 && cvv.length == 3) {
         setTimeout(function () {
-            window.location.href = "http:localhost:3333/ThankYouPopUp";
+            window.location.href = "http://localhost:3333/ThankYouPopUp";
         },1000)
     } else {
         alert("Check All Field")
@@ -16,8 +16,8 @@ function place(){
 }
    
 
-function backTostore() {
+// function backTostore() {
         
-    window.location.href = "http:location:3333/card";
+//     window.location.href = "http://localhost:3333/card";
 
-}
+// }

@@ -35,12 +35,12 @@ function slidShow(){
 
     slidShow();
 
-function goToHome() {
-        window.location.href = "../home.html"
-}
+// function goToHome() {
+//         window.location.href = "../home.html"
+// }
     
-function card() {
+// function card() {
 
-    window.location.href = "../card/card.html";
+//     window.location.href = "../card/card.html";
 
-}
+// }
