@@ -5,7 +5,9 @@
         font-family: BrandonTextWeb-Bold, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
 
-
+.none{
+    display: none;
+}
 #navBlock {
         display: flex;
         height: 62px;

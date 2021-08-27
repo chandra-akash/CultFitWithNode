@@ -45,25 +45,41 @@
         </div>
         <div id="itemTypes">
             <div>
-                <image id="men" onclick="showMen()"
-                    src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_250,ar_155:78,c_fit/dpr_2/cultgear-content/assets/clp-category-men.png">
-                </image>
+                <a href="/store/men">
+                    <image id="men"
+                        src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_250,ar_155:78,c_fit/dpr_2/cultgear-content/assets/clp-category-men.png">
+                    </image>
+                </a>
             </div>
             <div>
-                <image id="women" onclick="showGirl()"
-                    src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_250,ar_155:78,c_fit/dpr_2/cultgear-content/assets/clp-category-women.png">
-                </image>
+                <a href="/store/girl">
+                    <image id="women" 
+                        src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_250,ar_155:78,c_fit/dpr_2/cultgear-content/assets/clp-category-women.png">
+                    </image>
+                </a>
             </div>
             <div>
-                <image id="equipment" onclick="showGym()"
-                    src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_250,ar_155:78,c_fit/dpr_2/cultgear-content/assets/clp-category-footgear.png">
-                </image>
+                <a href="/store/gym">
+                    <image id="equipment"
+                        src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_250,ar_155:78,c_fit/dpr_2/cultgear-content/assets/clp-category-footgear.png">
+                    </image>
+                </a>
             </div>
         </div>
     
 
         <!-- store items  -->
     <div id="store_div">
+        <% store.forEach((el)=>{ %>
+            <div class="thumbnail" >
+                <img src="<%=el.image%>" onclick="location.href='selectedItem/<%= el._id %>'" alt="">
+                <p><%=el.name%></p>
+                <p class="title"><%=el.title%></p>
+                <span class="price"><%=el.price%></span>
+                <span class="cprice"><%=el.cprice%></span>
+                <span class="discound"><%=el.discount%></span>
+            </div>
+        <%})%>
     </div>
     <!-- heading bottom -->
     <div class="text">

@@ -11,23 +11,42 @@ var navbar = document.getElementById("navBlock");
 var sticky = navbar.offsetTop;
 
 
-var selected = JSON.parse(localStorage.getItem("selectedItem"));
+
+// var selected = JSON.parse(localStorage.getItem("selectedItem"));
 
 
-document.getElementById("images1").src = selected.image;
-document.getElementById("images2").src = selected.image;
-document.getElementById("images3").src = selected.image;
-document.getElementById("images4").src = selected.image;
+// document.getElementById("images1").src = selected.image;
+// document.getElementById("images2").src = selected.image;
+// document.getElementById("images3").src = selected.image;
+// document.getElementById("images4").src = selected.image;
 
-document.getElementById("title").innerHTML = selected.title;
+// document.getElementById("title").innerHTML = selected.title;
 
-document.getElementById("price").innerHTML = `₹${selected.price}`;
-document.getElementById("cprice").innerHTML = `₹${selected.cprice}`;
+// document.getElementById("price").innerHTML = `₹${selected.price}`;
+// document.getElementById("cprice").innerHTML = `₹${selected.cprice}`;
 
-document.getElementById("discount").innerText = `${selected.discount}`;
+// document.getElementById("discount").innerText = `${selected.discount}`;
 
 
+let image1 = document.getElementById("images1");
+let image = image1.src;
+let name = document.getElementById("name").innerText;
+let title = document.getElementById("title").innerText;
+let priceWith = document.getElementById("price").innerText;
+let priceall = priceWith.split(" ");
+let price = +priceall[1];
+let cpricewith = document.getElementById("cprice").innerText;
+let cpriceall = cpricewith.split(" ");
+let cprice = +cpriceall[1];
+let discount = document.getElementById("discount").innerText;
+let id = document.getElementById("id").innerText;
 
+
+// console.log(name,title,price,cprice,discount,id,image);
+// console.log(image);
+
+var selected = {id,image,name,price,cprice,discount};
+console.log(selected);
 
 function itemAddedToCard(){
 
@@ -44,7 +63,7 @@ function itemAddedToCard(){
   var flag = true;
   
   arr.forEach(function(el){
-    if (el.price == selected.price) {
+    if (el.id == selected.id) {
       flag = false;
       }
   })
@@ -96,12 +115,12 @@ function cardPage() {
 }
 
 
-function goToHome() {
-        window.location.href = "../home.html"
-}
+// function goToHome() {
+//         window.location.href = "../home.html"
+// }
     
-function card() {
+// function card() {
 
-    window.location.href = "../card/card.html";
+//     window.location.href = "../card/card.html";
 
-}
+// }
