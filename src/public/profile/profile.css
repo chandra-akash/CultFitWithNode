@@ -396,7 +396,6 @@ nav div3 div-3 img{
         filter: grayscale(100%);
         color: silver;
     }
-    
     @media only screen and (min-width: 1440px) {
   body {
     margin: 0;

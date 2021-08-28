@@ -20,5 +20,8 @@ function nameUser ()
 
 function userLogout ( id )
 {
+    console.log( 'delete ID: ', id );
 
+
+    window.location.href = "/home"
 }

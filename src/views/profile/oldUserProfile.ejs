@@ -104,8 +104,9 @@
                         <image id="cartimg" src="https://static.cure.fit/assets/images/support-black.svg"></image>
                     </div>
                     <div id="item1">
-                        <span class="logout">Logout</span>
-                        <image class="logout" id="cartimg" src="https://static.cure.fit/assets/images/logout-black.svg">
+                        <span class="logout" onclick="userLogout('<%=oldUser._id%>')">Logout</span>
+                        <image class="logout" onclick="userLogout('<%=oldUser._id%>')" id="cartimg"
+                            src="https://static.cure.fit/assets/images/logout-black.svg">
                         </image>
                     </div>
                 </div>
@@ -160,33 +161,6 @@
                             <button type="submit" class="btn btn-warning">Edit</button>
                         </div>
                     </form>
-
-                    <!-- <form class="row g-3" action="/userfull" method="post">
-                        <div class="col-md-6">
-                            <label for="userName" class="form-label">Name</label>
-                            <p id="user_name"><%=oldUser.userName%> </p>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="userPhoneNumber" class="form-label">PHONE NUMBER</label>
-                            <p id="user_number"><%=oldUser.userNumber%> </p>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="userGender" class="form-label">Gender</label><br>
-                            <p id="user_gender"><%=oldUser.userGender%> </p>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="userDOB" class="form-label">Date Of Birth</label>
-                            <p id='user_dob'><%=oldUser.userDOB%></p>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="userEmail" class="form-label">EMAIL</label>
-                            <p id='user_email'><%=oldUser.userEmail %></p>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="userWorkEmail" class="form-label">WORK EMAIL</label>
-                            <p id='user_wrk_email'><%=oldUser.userWorkEmail%></p>
-                        </div>
-                    </form> -->
                 </div>
             </div>
         </div>
