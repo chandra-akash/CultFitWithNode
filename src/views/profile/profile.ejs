@@ -115,7 +115,7 @@
                 <p>PROFILE</p>
                 <div class="container">
 
-                    <form class="row g-3" action="/userDetails/'<%=number._id%>'" method="put">
+                    <form class="row g-3" action="/userDetails/<%=number._id%>" method="POST">
                         <div class="col-md-6">
                             <label for="userName" class="form-label">Name</label>
                             <input type="text" class="form-control border-bottom" id="user_name" name="userName"
@@ -123,7 +123,7 @@
                         </div>
                         <div class="col-md-6">
                             <label for="userPhoneNumber" class="form-label">PHONE NUMBER</label>
-                            <p class="form-control" id="user_number" name="userNumber"><%=number.userNumber %> </p>
+                            <p class="form-control" id="user_number"><%=number.userNumber %> </p>
                         </div>
                         <div class="col-md-6">
                             <label for="userGender" class="form-label">Gender</label><br>
@@ -166,7 +166,7 @@
                         </div>
                         <div class="col-12">
                             <button type="submit" class="btn btn-success">Submit</button>
-                            <button type="submit" class="btn btn-warning">Edit</button>
+                            <!-- <button type="submit" class="btn btn-warning">Edit</button> -->
                         </div>
                     </form>
 
