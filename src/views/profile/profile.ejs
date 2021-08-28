@@ -115,7 +115,7 @@
                 <p>PROFILE</p>
                 <div class="container">
 
-                    <form class="row g-3" action="/userfull" method="post">
+                    <form class="row g-3" action="/userDetails/'<%=number._id%>'" method="put">
                         <div class="col-md-6">
                             <label for="userName" class="form-label">Name</label>
                             <input type="text" class="form-control border-bottom" id="user_name" name="userName"
@@ -123,7 +123,7 @@
                         </div>
                         <div class="col-md-6">
                             <label for="userPhoneNumber" class="form-label">PHONE NUMBER</label>
-                            <p class="form-control" id="user_number"><%=number.userNumber %> </p>
+                            <p class="form-control" id="user_number" name="userNumber"><%=number.userNumber %> </p>
                         </div>
                         <div class="col-md-6">
                             <label for="userGender" class="form-label">Gender</label><br>
@@ -146,8 +146,9 @@
                                     src="https://static.cure.fit/assets/images/female-inactive.svg">
                                 </image>
                             </div>
-                            <p id='gender'></p>
+                            <p id='gender' name="userGender"></p>
                             <hr>
+
                         </div>
                         <div class="col-md-6">
                             <label for="userDOB" class="form-label">Date Of Birth</label>
