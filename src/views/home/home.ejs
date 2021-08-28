@@ -86,7 +86,7 @@
                 <div id="set6" onclick="set6()">Jaipur</div>
                 <div id="set7" onclick="set7()">Vadodara</div>
                 <div id="set8" onclick="set8()">Pune</div>
-                <div id="set9" onclick="set9()">Kolkate</div>
+                <div id="set9" onclick="set9()">Kolkata</div>
                 <div id="set10" onclick="set10()">Ahmedabad</div>
                 <div id="set11" onclick="set11()">Mysore</div>
                 <div id="set12" onclick="set12()">Kota</div>
@@ -129,10 +129,11 @@
                             <option value="Israel">+972</option>
                         </select>
                         <input type="number" placeholder="Enter  your phone number" class="MobileInput" id="mobNum"
-                            name="userNumber" onkeypress="validNumber()">
-                        <button class=" ContinueButton" id="continueBtnCls" type="submit" onclick="matchNumber()">Continue</button>
+                            name="userNumber" onkeypress="validNumber()" required>
+                        <hr>
+                        <button class=" ContinueButton" id="continueBtnCls" type="submit"
+                            onclick="matchNumber()">Continue</button>
                     </form>
-                    <!-- <a href='' id="continueBtn">Continue</a> -->
                     <!-- turm & condition line -->
                     <div class="Tnc">
                         <div class="TncText">By Continuing you agree to the <a

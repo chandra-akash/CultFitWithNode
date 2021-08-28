@@ -599,7 +599,6 @@ background-image: linear-gradient(to right,#6f69aa,#378ac5);
     margin-top: 60px;
 }
 /* .InputContainer{
-    border-bottom: 2px solid rgb(151, 151, 151);
     width: fit-content;
     margin: 0px auto;
 } */
@@ -626,18 +625,6 @@ background-image: linear-gradient(to right,#6f69aa,#378ac5);
     vertical-align: middle;
     border: 0;
 }
-.MobileInput{
-    width: 202px;
-    border: none;
-    text-align: left;
-    background-color: transparent;
-    outline: none;
-    color: rgb(0, 0, 0);
-    font-size: 16px;
-    font-family: BrandonTextWeb-Medium, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-    padding-left: 10px;
-    letter-spacing: 3px;
-}
 .ActionContainer{
     display: flex;
     -webkit-box-pack: center;
@@ -647,23 +634,8 @@ background-image: linear-gradient(to right,#6f69aa,#378ac5);
     flex-direction: column;
     margin-top: 40px;
 }
-/* .ContinueButton{
-    color: rgb(255, 255, 255);
-    box-shadow: none;
-    border: 0px;
-    width: 69%;
-    height: 50px;
-    border-radius: 31px;
-    font-size: 18px;
-    background-image: linear-gradient(99deg, rgb(202, 202, 202), rgb(199, 199, 199));
-    cursor: pointer;
-        display: flex;
-    align-items: center;
-    justify-content: center;
-} */
 .MobileInput{
     width: 202px;
-    border-bottom: 2px solid rgb(151, 151, 151);
     border: none;
     text-align: left;
     background-color: transparent;
@@ -796,10 +768,6 @@ background-image: linear-gradient(to right,#6f69aa,#378ac5);
   }
 }
 @media (max-width: 767px) {
-    /* nav{
-        display: none;
-    } */
-
     #fit {
         display: flex;
         flex-direction: column;
