@@ -2,10 +2,11 @@ const express = require( 'express' );
 const router = express.Router();
 const User = require( '../models/user.model' )
 
-
+// ading new user number
 router.post( "", async function ( req, res )
 {
     var flag = true
+    // console.log(req.body)
     const user = await User.find().lean().exec()
     //console.log(req.body)
     for ( let i = 0; i < user.length; i++ )
@@ -24,14 +25,14 @@ router.post( "", async function ( req, res )
     {
         res.render( "profile/oldUserProfile.ejs", { oldUser } )
     }
-
 } );
 
-router.get( "", async ( req, res ) =>
+
+router.post( "/:id", async ( req, res ) =>
 {
-    console.log( req )
-    const user = await User.findByIdAndUpdate( req.params.id, req.body, { new: true } ).lean().exec()
-    console.log( 'user: ', user )
+    const oldUser = await User.findByIdAndUpdate( req.params.id, req.body, { new: true } ).lean().exec();
+    res.render( "profile/oldUserProfile.ejs", { oldUser } )
 } )
+
 
 module.exports = router;
