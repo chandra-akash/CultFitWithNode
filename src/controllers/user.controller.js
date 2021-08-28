@@ -12,7 +12,8 @@ router.post( "", async function ( req, res )
     {
         if ( user[ i ].userNumber == req.body.userNumber )
         {
-            flag = false
+            flag = false;
+            var oldUser = user[ i ];
         }
     }
     if ( flag == true )
@@ -21,15 +22,15 @@ router.post( "", async function ( req, res )
         res.render( "profile/profile.ejs", { number: number } )
     } else
     {
-        //console.log("not created")
+        res.render( "profile/oldUserProfile.ejs", { oldUser } )
     }
 
 } );
 
-router.put( "/:id", async ( req, res ) =>
+router.get( "", async ( req, res ) =>
 {
-    console.log( req.body )
-    const user = await User.findByIdAndUpdate( req.params.id ).lean().exec()
+    console.log( req )
+    const user = await User.findByIdAndUpdate( req.params.id, req.body, { new: true } ).lean().exec()
     console.log( 'user: ', user )
 } )
 

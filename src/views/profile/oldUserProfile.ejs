@@ -72,7 +72,7 @@
                 <div id="details">
                     <image id="prof" src="https://static.cure.fit/assets/images/user-default.png"></image>
                     <div id="name">
-                        <span id="display_user_name">User</span>
+                        <span id="display_user_name"><%=oldUser.userName%></span>
                         <p>VIEW PROFILE</p>
                     </div>
                 </div>
@@ -104,8 +104,9 @@
                         <image id="cartimg" src="https://static.cure.fit/assets/images/support-black.svg"></image>
                     </div>
                     <div id="item1">
-                        <span>Logout</span>
-                        <image id="cartimg" src="https://static.cure.fit/assets/images/logout-black.svg"></image>
+                        <span class="logout">Logout</span>
+                        <image class="logout" id="cartimg" src="https://static.cure.fit/assets/images/logout-black.svg">
+                        </image>
                     </div>
                 </div>
             </div>
@@ -117,27 +118,27 @@
                     <form class="row g-3" action="/userfull" method="post">
                         <div class="col-md-6">
                             <label for="userName" class="form-label">Name</label>
-                            <p class="form-control" id="user_name"><%=number.userName %> </p>
+                            <p id="user_name"><%=oldUser.userName%> </p>
                         </div>
                         <div class="col-md-6">
                             <label for="userPhoneNumber" class="form-label">PHONE NUMBER</label>
-                            <p class="form-control" id="user_number"><%=number.userNumber %> </p>
+                            <p id="user_number"><%=oldUser.userNumber%> </p>
                         </div>
                         <div class="col-md-6">
                             <label for="userGender" class="form-label">Gender</label><br>
-                            <p class="form-control" id="user_gender"><%=number.userGender %> </p>
+                            <p id="user_gender"><%= %> </p>
                         </div>
                         <div class="col-md-6">
                             <label for="userDOB" class="form-label">Date Of Birth</label>
-                            <p class="form-control text-muted" id='user_dob'><%=number.userDOB %></p>
+                            <p id='user_dob'><%=oldUser.userDOB%></p>
                         </div>
                         <div class="col-md-6">
                             <label for="userEmail" class="form-label">EMAIL</label>
-                            <p class="form-control" id='user_email'><%=number.userEmail %></p>
+                            <p id='user_email'><%=oldUser.userEmail %></p>
                         </div>
                         <div class="col-md-6">
                             <label for="userWorkEmail" class="form-label">WORK EMAIL</label>
-                            <p class="form-control" id='user_wrk_email'><%=number.userWorkEmail %></p>
+                            <p id='user_wrk_email'><%=oldUser.userWorkEmail%></p>
                         </div>
                     </form>
                 </div>
