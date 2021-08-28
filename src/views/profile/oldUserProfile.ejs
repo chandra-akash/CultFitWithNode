@@ -115,7 +115,53 @@
                 <p>PROFILE</p>
                 <div class="container">
 
-                    <form class="row g-3" action="/userfull" method="post">
+                    <form class="row g-3" action="/userDetails/<%=oldUser._id%>" method="POST">
+                        <div class="col-md-6">
+                            <label for="userName" class="form-label">Name</label>
+                            <input type="text" class="form-control border-bottom" id="user_name" name="userName"
+                                placeholder="Your Name" value="<%=oldUser.userName%>">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="userPhoneNumber" class="form-label">PHONE NUMBER</label>
+                            <input type="text" class="form-control border-bottom" id="user_name" name="userNumber"
+                                placeholder="Your Name" value="<%=oldUser.userNumber %>">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="userGender" class="form-label">Gender</label><br>
+                            <div id="malefema">
+                                <image onclick="male()" id="maleImg" class="gender male"
+                                    src="https://static.cure.fit/assets/images/male-inactive.svg">
+                                </image>
+                                <div id="vertline"></div>
+                                <image onclick="female()" id="femaleImg" class="gender"
+                                    src="https://static.cure.fit/assets/images/female-inactive.svg">
+                                </image>
+                            </div>
+                            <input type="text" id='gender' name="userGender" placeholder="Your gender"
+                                value="<%=oldUser.userGender%>">
+
+                        </div>
+                        <div class="col-md-6">
+                            <label for="userDOB" class="form-label">Date Of Birth</label>
+                            <input type="date" class="form-control text-muted" id='user_dob' name="userDOB"
+                                value="<%=oldUser.userDOB%>">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="userEmail" class="form-label">EMAIL</label>
+                            <input type="email" class="form-control" id='user_email' name="userEmail"
+                                value="<%=oldUser.userEmail %>">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="userWorkEmail" class="form-label">WORK EMAIL</label>
+                            <input type="email" class="form-control" id='user_wrk_email' name="userWorkEmail"
+                                value="<%=oldUser.userWorkEmail%>">
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-warning">Edit</button>
+                        </div>
+                    </form>
+
+                    <!-- <form class="row g-3" action="/userfull" method="post">
                         <div class="col-md-6">
                             <label for="userName" class="form-label">Name</label>
                             <p id="user_name"><%=oldUser.userName%> </p>
@@ -126,7 +172,7 @@
                         </div>
                         <div class="col-md-6">
                             <label for="userGender" class="form-label">Gender</label><br>
-                            <p id="user_gender"><%= %> </p>
+                            <p id="user_gender"><%=oldUser.userGender%> </p>
                         </div>
                         <div class="col-md-6">
                             <label for="userDOB" class="form-label">Date Of Birth</label>
@@ -140,7 +186,7 @@
                             <label for="userWorkEmail" class="form-label">WORK EMAIL</label>
                             <p id='user_wrk_email'><%=oldUser.userWorkEmail%></p>
                         </div>
-                    </form>
+                    </form> -->
                 </div>
             </div>
         </div>

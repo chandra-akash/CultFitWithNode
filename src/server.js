@@ -12,7 +12,6 @@ const paymentController = require( "./controllers/payment.controller" );
 const thankyouController = require( "./controllers/thankyou.controller" );
 const profileController = require( "./controllers/profile.controller" );
 const userController = require( "./controllers/user.controller" );
-// const userfullController = require( "./controllers/userfull.controller" );
 
 const app = express();
 
@@ -32,7 +31,6 @@ app.use( "/payment", paymentController );
 app.use( "/profile", profileController );
 app.use( "/ThankYouPopUp", thankyouController );
 app.use( "/userDetails", userController );
-// app.use( "/userfull", userfullController );
 
 app.listen( 3333, async () =>
 {

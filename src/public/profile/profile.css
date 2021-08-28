@@ -391,9 +391,13 @@ nav div3 div-3 img{
 
     .logout{
         cursor: pointer;
-        text-decoration: none;
     }
-    /* @media only screen and (min-width: 1440px) {
+    .logout:hover{
+        filter: grayscale(100%);
+        color: silver;
+    }
+    
+    @media only screen and (min-width: 1440px) {
   body {
     margin: 0;
      width: auto;
@@ -413,4 +417,4 @@ nav div3 div-3 img{
     margin: 0;
      width: auto;
   }
-} */
+}
