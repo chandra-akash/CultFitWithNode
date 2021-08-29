@@ -2,19 +2,23 @@
 
 Hello there, you might have seen the cult.fit Website, where you can purchase fitness related items like: sports lowers, t shirts, gym equipment and many more thinks. In cult.fit you also get information about health and nutrition related stuff. Also you can fix one on one coach for you for training.
 
-Moving ahead, In a team we member of 4 people study at Masai School developed a clone of the website of cult.fit in just 4 days as a part of our curriculum. This blog is all about our journey and the challenges we faced while building the project.
+Moving ahead, In a team we member of 3 people study at Masai School developed a clone of the website of cult.fit in just 4 days as a part of our curriculum. This blog is all about our journey and the challenges we faced while building the project.
 
 # Technology Stack Used
 In this project we have used the following tech stack:
 * HTML
 * CSS
 * JavaScript
+* Node js
+* Express
+* Mongodb
 
-Along with that, in order to store user data we also used LocalStorage (aka browser storage).
+For storing all data we use mongodb atles.
 
 # #Libraries Used 🌟
 
 All the image and icon links have been taken from the main website ( https://www.cult.fit/ )
+Express,Mongoose and npm dependencies.
 
 # # Snapshots 📷
 
@@ -63,10 +67,6 @@ All the image and icon links have been taken from the main website ( https://www
 In this project we were tried to achieve a near to perfect clone of the original website as much as possible with very limited knowledge of javascript & css.
 This entire journey of making the project was awesome. We learned lots of things by applying to the real website and it gave us a lot of confidence. Although we could have done more, time did not allow us to go further. But we must improve it.
 
-# # # Limitations:
-
-Not responsive yet and might not be properly visible on small screen devices (Recomended Resolution: 1496 x 768 )
-
 # # # Live Video Demo🎥:
 
 # # Team Members and Contributors 😇 :
@@ -76,9 +76,6 @@ Not responsive yet and might not be properly visible on small screen devices (Re
 
 👤 Sharad Dethe
 * Github:https://github.com/Sharad13
-
-👤 Anup Kumar Pandey
-* Github: https://github.com/Anuppandey009
 
 👤 Akash Chandra
 * Github:https://github.com/chandra-akash
