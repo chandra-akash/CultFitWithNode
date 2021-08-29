@@ -45,7 +45,7 @@ let id = document.getElementById("id").innerText;
 // console.log(name,title,price,cprice,discount,id,image);
 // console.log(image);
 
-var selected = {id,image,name,price,cprice,discount};
+var selected = {id,image,name,title,price,cprice,discount};
 console.log(selected);
 
 function itemAddedToCard(){
