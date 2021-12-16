@@ -4,6 +4,9 @@ Hello there, you might have seen the cult.fit Website, where you can purchase fi
 
 Moving ahead, In a team we member of 3 people study at Masai School developed a clone of the website of cult.fit in just 4 days as a part of our curriculum. This blog is all about our journey and the challenges we faced while building the project.
 
+<br />
+<i>App Link:</i> https://sharad13.github.io/CultFit/
+
 # Technology Stack Used
 In this project we have used the following tech stack:
 * HTML
