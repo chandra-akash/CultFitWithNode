@@ -22,6 +22,7 @@ app.use( "/static", express.static( path.join( __dirname, "public" ) ) );
 app.set( "views", path.join( __dirname, "views/" ) );
 app.set( "view engine", "ejs" );
 
+app.use( "/", homeController );
 app.use( "/home", homeController );
 app.use( "/store", storeController );
 app.use( "/care", careController );
